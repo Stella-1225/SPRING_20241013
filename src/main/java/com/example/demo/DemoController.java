@@ -22,9 +22,14 @@ public class DemoController {
         return "hello2"; 
     }
 
-    @GetMapping("/index")
+    @GetMapping("/index1")
     public String index(Model model) {
         model.addAttribute("data", " 방갑습니다.");
-        return "index"; 
+        return "index1"; 
+    }
+
+    @GetMapping("/about_detailed")
+    public String about() {
+        return "about_detailed"; 
     }
 }
