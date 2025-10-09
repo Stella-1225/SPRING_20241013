@@ -15,3 +15,9 @@
 - 데이터베이스 생성 및 연동
 - 폴더 생성 후 파일 분리
 - 4주차 연습문제 완료!
+
+## 5주차
+- index.html 파일 수정(네비게이션 바에 게시판 링크 연결)
+- article_list.html, Article.java, BlogController.java, BlogRepository.java, BlogService.java, BlogRestController.java, AddArticleRequest.java 파일 생성 및 코드 작성
+- 블로그 게시판 생성 후 조회, 글쓰기 기능 추가
+- 5주차 연습문제 완료!
