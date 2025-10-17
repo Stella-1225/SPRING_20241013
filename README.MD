@@ -21,3 +21,11 @@
 - article_list.html, Article.java, BlogController.java, BlogRepository.java, BlogService.java, BlogRestController.java, AddArticleRequest.java 파일 생성 및 코드 작성
 - 블로그 게시판 생성 후 조회, 글쓰기 기능 추가
 - 5주차 연습문제 완료!
+
+## 6주차
+- 블로그 게시판 수정, 삭제 기능 추가
+- 예외처리 기능 추가
+- article_list.html, BlogController.java, BlogService.java, Article.java 파일 수정 및 코드 추가 작성
+- application.properties 설정 파일 수정
+- article_edit.html, article_error.html 파일 생성 및 코드 작성
+- 6주차 연습문제 완료!
