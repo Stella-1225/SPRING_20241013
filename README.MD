@@ -29,3 +29,9 @@
 - application.properties 설정 파일 수정
 - article_edit.html, article_error.html 파일 생성 및 코드 작성
 - 6주차 연습문제 완료!
+
+## 7주차
+- 프로필 수정(전체 프로젝트 부분)
+- board_list.html, board_view.html, Board.java, BoardRepository.java 파일 생성 및 코드 작성
+- BlogController.java, AddArticleRequest.java 파일 수정
+- 7주차 연습문제 완료!
