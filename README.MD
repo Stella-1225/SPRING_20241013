@@ -32,6 +32,17 @@
 
 ## 7주차
 - 프로필 수정(전체 프로젝트 부분)
+- 새로운 게시판 생성
+- 새로운 게시판 수정, 삭제 버튼 추가
 - board_list.html, board_view.html, Board.java, BoardRepository.java 파일 생성 및 코드 작성
 - BlogController.java, AddArticleRequest.java 파일 수정
 - 7주차 연습문제 완료!
+
+## 9주차
+- 메인화면 게시판 링크 변경
+- 글쓰기 버튼 추가 및 글쓰기 기능 구현
+- 검색창 추가 및 검색 기능 구현
+- 페이징 기능 구현
+- board_write.html 생성 및 코드 작성
+- board_list.html, BlogController.java, BlogService.java 수정 
+- 9주차 연습문제 완료!

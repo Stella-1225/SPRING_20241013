@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import com.example.demo.model.domain.Article;
 import com.example.demo.model.domain.Board;
@@ -45,6 +47,19 @@ public class BlogService {
         return blogRepository2.findById(id);
     }
 
+    public Board save(AddArticleRequest request){
+        // DTO가 없는 경우 이곳에 직접 구현 가능
+        return blogRepository2.save(request.toEntity());
+    }
+
+    public Page<Board> findAll(Pageable pageable) {
+        return blogRepository2.findAll(pageable);
+    }
+    
+    public Page<Board> searchByKeyword(String keyword, Pageable pageable) {
+        return blogRepository2.findByTitleContainingIgnoreCase(keyword, pageable);
+    } // LIKE 검색 제공(대소문자 무시)
+
     // public void update(Long id, AddArticleRequest request) {
     //     Optional<Article> optionalArticle = blogRepository.findById(id); // 단일 글 조회
     //         optionalArticle.ifPresent(article -> { // 값이 있으면
@@ -53,16 +68,20 @@ public class BlogService {
     //     });
     // }
 
-    public void update(Long id, AddArticleRequest request) {
-         Optional<Board> optionalArticle = blogRepository2.findById(id); // 단일 글 조회
-            optionalArticle.ifPresent(article -> { // 값이 있으면
-            article.update(request.getId(), article.getTitle(), article.getUser(), article.getNewdate(), article.getCount(), article.getLikec()); // 값을 수정
-            blogRepository2.save(article); // Article 객체에 저장
-        });
-    }
+    // public void update(Long id, AddArticleRequest request) {
+    //      Optional<Board> optionalArticle = blogRepository2.findById(id); // 단일 글 조회
+    //         optionalArticle.ifPresent(article -> { // 값이 있으면
+    //         article.update(request.getId(), article.getTitle(), article.getUser(), article.getNewdate(), article.getCount(), article.getLikec()); // 값을 수정
+    //         blogRepository2.save(article); // Article 객체에 저장
+    //     });
+    // }
+
+    // public void delete(Long id) {
+    //     blogRepository.deleteById(id);
+    // }
 
     public void delete(Long id) {
-        blogRepository.deleteById(id);
+        blogRepository2.deleteById(id);
     }
 
 }

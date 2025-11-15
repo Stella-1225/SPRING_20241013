@@ -8,8 +8,8 @@ import com.example.demo.model.domain.Board;
 @AllArgsConstructor // 모든 필드 값을 파라미터로 받는 생성자 추가
 @Data // getter, setter, toString, equals 등 자동 생성
 public class AddArticleRequest {
-    private String id;
     private String title;
+    private String content;
     private String user;
     private String newdate;
     private String count;
@@ -18,6 +18,7 @@ public class AddArticleRequest {
     public Board toEntity(){ // Board 객체 생성
         return Board.builder()
         .title(title)
+        .content(content)
         .user(user)
         .newdate(newdate)
         .count(count)
