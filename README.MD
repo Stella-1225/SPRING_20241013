@@ -46,3 +46,10 @@
 - board_write.html 생성 및 코드 작성
 - board_list.html, BlogController.java, BlogService.java 수정 
 - 9주차 연습문제 완료!
+
+## 10주차
+- 스프링 시큐리티로 로그인/로그아웃 생성
+- 회원가입 화면 및 기능, 회원가입 완료 화면 구현
+- 로그인 페이지 검증 기능 구현
+- Member.java, MemberController.java, join_new.html, Member_Repository.java, Member_Service.java, join_end.html, login.html 생성 및 코드 작성
+- 10주차 연습문제 완료!
