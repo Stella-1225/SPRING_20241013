@@ -17,6 +17,7 @@ import lombok.RequiredArgsConstructor;
 public class MemberService {
     private final MemberRepository memberRepository;
     private final PasswordEncoder passwordEncoder; // 스프링 버전 5 이후, 단방향 해싱 알고리즘 지원
+    
     private void validateDuplicateMember(AddMemberRequest request){
         Member findMember = memberRepository.findByEmail(request.getEmail()); // 이메일 존재 유무
         if(findMember != null){
@@ -40,5 +41,16 @@ public class MemberService {
             throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
         }
             return member; // 인증 성공 시 회원 객체 반환
+    }
+
+    //이메일을 사용하여 회원 이름(닉네임 역할) 조회
+    @Transactional(readOnly = true) // 읽기 전용으로 설정
+    public String findNameByEmail(String email) {
+        Member member = memberRepository.findByEmail(email); // 이메일로 회원 객체 조회
+        
+        if (member == null) {
+            return null; 
+        }
+        return member.getName(); //Member.name 필드의 값을 반환
     }
 }

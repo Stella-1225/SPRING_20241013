@@ -53,3 +53,11 @@
 - 로그인 페이지 검증 기능 구현
 - Member.java, MemberController.java, join_new.html, Member_Repository.java, Member_Service.java, join_end.html, login.html 생성 및 코드 작성
 - 10주차 연습문제 완료!
+
+## 11주차
+-  프로젝트 팀원 부분 및 경험 부분 수정
+- index.html, BlogController.java, MemberController.java, board_list.html, SecurityConfig.java, SecurityConfig.java, application.properties 수정
+- board_list.html, board_view.html, BlogController.java, MemberServive.java, pom.xml 수정 및 코드 추가 구현
+- 11주차 연습문제 완료!
+  - 회원가입 시 입력한 이름으로 글 작성자 나오도록 구현
+  - 같은 계정에서 이메일로 글 작성자가 출력되는 게시글만 글 수정, 삭제 가능한 문제 이름도 같이 조건으로 전달하여 문제 해결
