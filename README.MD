@@ -56,8 +56,22 @@
 
 ## 11주차
 -  프로젝트 팀원 부분 및 경험 부분 수정
-- index.html, BlogController.java, MemberController.java, board_list.html, SecurityConfig.java, SecurityConfig.java, application.properties 수정
-- board_list.html, board_view.html, BlogController.java, MemberServive.java, pom.xml 수정 및 코드 추가 구현
+- index.html, BlogController.java, MemberController.java, board_list.html, SecurityConfig.java, application.properties 수정
+- board_list.html, board_view.html, BlogController.java, MemberService.java, pom.xml 수정 및 코드 추가 구현
 - 11주차 연습문제 완료!
   - 회원가입 시 입력한 이름으로 글 작성자 나오도록 구현
   - 같은 계정에서 이메일로 글 작성자가 출력되는 게시글만 글 수정, 삭제 가능한 문제 이름도 같이 조건으로 전달하여 문제 해결
+
+## 12주차
+- application.properties 설정을 추가
+- FileController.java, upload_end.html 파일 생성 및 코드 추가
+- index.html, SecurityConfig.java 수정
+- index.html에 있는 iframe 부분을 선호지역으로 수정 및 메일 업로드 기능 수정
+  - 메일 업로드 기능 수정 과정에서  application.properties 오타와 name 속성 미지정으로 서버 접근 못하는 문제 발생했지만, 해결
+- 나의 프로젝트 사진 이미지를 지금까지 해본 프로젝트 사진으로 변경
+- About Start 부분 이미지와 내용 수정
+- 나의 서비스를 상세 소개로 내용 수정
+- 프로젝트 팀원 부분 사진 추가 및 이름 수정
+- 추천인/전문가 후기 부분 수정
+- 12주차 연습문제 완료!
+   - 파일 업로드 실패 시 예외 처리 로직(Exception Handling)이 정상 작동하는지 검증하기 위해 강제 예외 발생 테스트 수행 및 에러 페이지 연동 확인.
