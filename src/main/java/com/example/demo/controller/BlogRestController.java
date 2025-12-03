@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @RestController // @Controller + @ResponseBody
 public class BlogRestController {
-private final BlogService blogService;
+    private final BlogService blogService;
 
     // @PostMapping("/api/articles") // post 요청
     // public ResponseEntity<Article> addArticle(@ModelAttribute AddArticleRequest request) { // 아직 없음(에러)
